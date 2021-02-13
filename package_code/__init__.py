@@ -1,9 +1,11 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
+import json
 
 # Fetch the service account key JSON file contents
-cred = credentials.Certificate('./vaccine-percentage-firebase-adminsdk-ogi68-3623de3267.json')
+cred = credentials.Certificate(
+    './vaccine-percentage-firebase-adminsdk-ogi68-3623de3267.json')
 
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
@@ -16,4 +18,6 @@ ref = db.reference('countries')
 found_countries = ref.get()
 
 
-print(found_countries[0].name)
+for i in found_countries:
+    if int(i['vaccinatedPercentage']) > 50:
+        print('Succesful vaccination: '+str(i['name']))
