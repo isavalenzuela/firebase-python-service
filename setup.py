@@ -20,10 +20,11 @@ setup(
     description="simple project that extracts data from firebase and exposes it with python service",
     license="MIT",
     author="isavalenzuela",
-    packages=['firebase_admin'],
+    keywords='firebase cloud development',
     install_requires=install_requires,
-    long_description=long_description,
-    classifiers=[
+    packages=['firebase_admin'],
+    python_requires='>=3.5',
+ classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.8",
     ]
