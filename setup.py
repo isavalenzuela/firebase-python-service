@@ -20,7 +20,7 @@ setup(
     description="simple project that extracts data from firebase and exposes it with python service",
     license="MIT",
     author="isavalenzuela",
-    packages=find_packages(),
+    packages=['firebase_admin'],
     install_requires=install_requires,
     long_description=long_description,
     classifiers=[
