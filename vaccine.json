@@ -1,0 +1,39 @@
+{
+  "countries": [
+    {
+      "id": 0,
+      "name": "United States",
+      "vaccinatedPercentage": 50
+    },
+    {
+      "id": 1,
+      "name": "Canada",
+      "vaccinatedPercentage": 82
+    },
+    {
+      "id": 2,
+      "name": "Italy",
+      "vaccinatedPercentage": 86
+    },
+    {
+      "id": 3,
+      "name": "France",
+      "vaccinatedPercentage": 72
+    },
+    {
+      "id": 4,
+      "name": "China",
+      "vaccinatedPercentage": 67
+    },
+    {
+      "id": 5,
+      "name": "Chile",
+      "vaccinatedPercentage": 48
+    },
+    {
+      "id": 6,
+      "name": "Rusia",
+      "vaccinatedPercentage": 74
+    }
+  ]
+}
