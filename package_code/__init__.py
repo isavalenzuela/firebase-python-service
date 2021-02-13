@@ -18,6 +18,10 @@ ref = db.reference('countries')
 found_countries = ref.get()
 
 
+# for i in found_countries:
+#     if i['vaccinatedPercentage'] > 50:
+#         print('Succesful vaccination: ' +str(i['name']))
+
 for i in found_countries:
-    if int(i['vaccinatedPercentage']) > 50:
-        print('Succesful vaccination: '+str(i['name']))
+    if i['name'] == 'Chile':
+        print('Vaccine percentage: ', (i['vaccinatedPercentage']), '%')
