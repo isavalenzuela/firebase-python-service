@@ -5,7 +5,7 @@ import json
 
 # Fetch the service account key JSON file contents
 cred = credentials.Certificate(
-    './vaccine-percentage-firebase-adminsdk-ogi68-3623de3267.json')
+    './firebase_key.json')
 
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
